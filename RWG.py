@@ -1,12 +1,16 @@
 import random
 type_style = input("single or multi : ")
+
 if type_style=="single":
+
     n = input("Type a lettle : ")
     while (type_style != "stop"):
         print(n,"\n")
         y = input()
         if y==n:
             print(True)
+        elif y == "stop":
+            break
         else:
             print(False)
 
